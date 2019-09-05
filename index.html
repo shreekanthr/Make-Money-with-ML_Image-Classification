@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+  <head>
+    
+    <title>Train and Classify your Images</title>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <!-- Load the KNN Classifier for unsupervised learning -->
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+    <link rel='stylesheet' href='styles.css'/>
+  </head>
+  <body>
+
+
+    <h1>Train Classification of Your Images and Try Prediction</h1>
+
+    <br>
+    <p><em>Instructions:</em> Once the camera on your device is switched on, you can select an object, focus the camera on it and click on one of the category buttons to take an image. Continue to take the images of the same object from possibly different angles or maybe a different object that is of similar category (think of different base balls) by clicking the same button (not a different button). The more images you feed, the better trained your model would be for a generic classification, but in general I would say try out 4-5 images. Then pick differnt objects / shapes and repeat the process for the other 3 category buttons. That way your prediction model will have atleast 4 objects to classify from. Once done training, you can just place any of the objects / shape in front pf the camera and the prediction would be shown at the top with a probability score.</p>
+    <br>
+    <p><em>Psst:</em> You can try this along with some of your friends having their faces as the classification objects. You can then be the wizard and show this off as a face recognition app ! Have fun ! </p>
+
+    <!-- Add an image that we will use to test -->
+    <div class="video_prediction_container"> 
+        <video autoplay playsinline muted id="webcam" width="250" height="250"></video>
+        <div id="Beside_Image"></div>
+    </div>
+
+    <br>
+    <!-- Add 4 buttons below the video image to train 4 different classes of images -->
+    <button class="button" id="class-a">Category A</button>
+    <button class="button" id="class-b">Category B</button>
+    <button class="button" id="class-c">Category C</button>
+    <button class="button" id="class-d">Category D</button>
+
+
+    <!-- Load index.js after the content of the page -->
+    <script src="index.js"></script>
+  </body>
+</html>

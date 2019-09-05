@@ -1,0 +1,48 @@
+
+h1 {
+	color: navy;
+	text-align: center;
+	border: 1px solid;
+	padding: 10px;
+	box-shadow: 5px 10px 18px darkgrey;
+}
+
+p {
+	text-align: justify;
+	font-style: italic;
+}
+
+.video_prediction_container {
+	  display: flex;
+	  justify-content: space-around;
+}
+
+.button {
+	
+	font-weight: bold;
+	width: 100px;
+	height: 40px;
+	border-radius: 15px;
+	box-shadow: 0 5px #999;
+}
+
+#class-a {
+	background-color: royalblue;
+}
+
+#class-b {
+	background-color: salmon;
+}
+
+#class-c {
+	background-color: seagreen;
+}
+
+#class-d {
+	background-color: palevioletred;
+}
+
+body {
+  color: #414141;    /* Dark gray */
+  background-color: #EEEEEE;    /* Light gray *
+}
